@@ -1,7 +1,48 @@
+var value;
+var searchfrom = document.getElementsByTagName('a');
+
+for (var i = 0; i < 12; i+=1){
+  var firstAttr = searchfrom[i].getAttribute("data-sub-html");
+  console.log(firstAttr);
+  
+};
+
+var result = $( "input" )
+  .keyup(function() {
+    value = $( 'input' ).val();
+    console.log(value);
+  });
 
 
-var searchfrom = document.getElementsByTagName("a").getAttribute("data-sub-html");
-console.log(searchfrom);
+
+
+
+//if (value === 'null') {$('a').css('background', 'red')}
+//    else if (value.toLowerCase === firstAttr.toLowerCase) {$('body').css('background', 'red')}
+//    else if (value.toLowerCase !== firstAttr.toLowerCase) {console.log('none')}
+//    else {console.log('??')};
+
+                                               
+//
+//var puk=$('a').attr("data-sub-html");
+//console.log(puk);
+//
+//for (var i = 0; i < 12; i+=1) {
+//$('input').keyup(function(){
+//  $('a')[i].each(function(){console.log(
+//    puk);
+//    });
+//})};
+
+
+//}
+
+//
+//var myValue = $("#search").val();
+//console.log(myValue);
+
+//var searchfrom = document.getElementsByTagName("a").getAttribute("data-sub-html");
+//console.log(searchfrom);
 
 // If condition
 //if (value === 'undefined') {$('a').css('background', 'red')}
