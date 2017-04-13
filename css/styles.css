@@ -23,6 +23,10 @@ a:hover {
   color: #6633ff; /*  check for hovered link state*/
 }
 
+h2 { /*  caption title style */
+  font-size:1.2em;
+  margin-top:2px;
+}
 
 .lg-sub-html p {   /*  captions p */
   font-size:.9em; 
