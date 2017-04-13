@@ -1,26 +1,25 @@
-
-
 function myFunction() {
-
+    // Declare variables
   console.log('1');
-    var input, filter, searchfrom, b, i, x;
-    var searchfrom = document.getElementsByTagName('a');
+    var input, filter, searchFrom, searchArea, i;
+    var searchFrom = document.getElementsByTagName('a');
 
     input = document.getElementById('search');
     filter = input.value.toUpperCase();
   console.log('2');
-   
-  // It loops through all list items, and hides those who don't match the search
+    // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < 12; i++) {
-        b = searchfrom[i].getAttribute("data-sub-html");
+        searchArea = searchFrom[i].getAttribute("data-sub-html");
       
-        b.toUpperCase().indexOf(filter);
+        searchArea.toUpperCase().indexOf(filter);
      console.log('3');  
-        if (b.toUpperCase().indexOf(filter) > -1) {
-            searchfrom[i].style.display = "";
+        if (searchArea.toUpperCase().indexOf(filter) > -1) {
+            searchFrom[i].style.display = "";
+            
         } else {
-            searchfrom[i].style.display = "none";
+            searchFrom[i].style.display = "none";
         }
     }
    console.log('4');
 }
+
