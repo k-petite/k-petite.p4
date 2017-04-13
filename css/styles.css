@@ -108,9 +108,9 @@ input {
 
 @media(min-width: 1024px) {
 
-.container {
-  max-width:1200px;
-}
+  .container {
+    max-width:1200px;
+  }
   
-
+}
 
