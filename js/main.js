@@ -7,21 +7,27 @@ for (var i = 0; i < 12; i+=1){
   
 };
 
-var result = $( "input" )
-  .keyup(function() {
-    value = $( 'input' ).val();
-    console.log(value);
-  });
+
+function myFunction() {
+var x = document.getElementById("search").value;
+    console.log(x);
+}
+
+value = myFunction();
+
+if (value === 'null') {$('a').css('background', 'red')}
+else if (value === firstAttr.toLowerCase()) {$('body').css('background', 'red')}
+else if (value !== firstAttr.toLowerCase()) {console.log('none')}
+else {console.log('??')};
 
 
 
-
-
-//if (value === 'null') {$('a').css('background', 'red')}
-//    else if (value.toLowerCase === firstAttr.toLowerCase) {$('body').css('background', 'red')}
-//    else if (value.toLowerCase !== firstAttr.toLowerCase) {console.log('none')}
-//    else {console.log('??')};
-
+//var result = $(function myFunction() {
+//
+//  $( "input" ).keyup(function() {
+//  var value = $( 'input' ).val(); });
+//  return value;
+//});
                                                
 //
 //var puk=$('a').attr("data-sub-html");
