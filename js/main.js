@@ -2,7 +2,7 @@ function myFunction() {
     // Declare variables
   console.log('1');
     var input, filter, searchFrom, searchArea, i;
-    var searchFrom = document.getElementsByTagName('a');
+    searchFrom = document.getElementsByTagName('a');
 
     input = document.getElementById('search');
     filter = input.value.toUpperCase();
