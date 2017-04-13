@@ -15,12 +15,6 @@ body {
 
 a {
   text-decoration:none;
-  color: #999; /*  check for normal link state*/;
-/*  background:red;*/
-}
-
-a:hover {
-  color: #6633ff; /*  check for hovered link state*/
 }
 
 h2 { /*  caption title style */
@@ -40,8 +34,9 @@ h2 { /*  caption title style */
 }
 
 .container img:hover {
-  background: grey;
   border-radius:1px;
+  -webkit-filter: brightness(50%); 
+  filter: brightness(50%);
 }
 
 
