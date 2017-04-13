@@ -23,35 +23,26 @@ a:hover {
   color: #6633ff; /*  check for hovered link state*/
 }
 
-ul {
-  list-style-type:none;
-  margin:0;
-}
 
-li {
-  list-style-type:none;
-  margin:0 auto;
-}
-
-h2 {
-  font-size:1.2em;
-  margin-top:2px;
-}
-
-.lg-sub-html p {
-  font-size:.9em;
+.lg-sub-html p {   /*  captions p */
+  font-size:.9em; 
 }
 
 .container img {
   max-width: 100%;
   margin: 1.3em;
-  padding: .5em;
+  padding: .3em;
+  display:inline-block;
+}
+
+.container img:hover {
+  background: grey;
+  border-radius:1px;
 }
 
 
-
 /* ================================= 
-          Layout containers
+          Layout container
 ==================================== */
 .container {
   width:95%;
@@ -85,43 +76,12 @@ input {
   border: 1px solid lightgrey;
   font-size: 1em;
   height: 40px;
-  width: 100%;
   border-radius:5px;
-  text-align:center;
+  text-align:left;
   margin: 20px auto;
   padding:15px;
   width:70%;
 }
-
-/* ================================= 
-                Lightbox
-==================================== */
-
-
-/* ================================= 
-                Clearfix
-==================================== */
-
-  .cf:before,
-  .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-   }
-
-  .cf:after {
-    clear: both;
-  }
-
-
-/* ================================= 
-                Footer
-==================================== */
-
-
-
-/* ================================= 
-                Colors
-==================================== */
 
 
 
@@ -138,24 +98,11 @@ input {
      Search box
 ====================== */
   
-form {
-  width: 45%;
-  margin:0 auto;
+input {
+
+  width:45%;
 }
 
-/* ===================
-     General info
-====================== */  
-
-/*
-.container a {
-  margin: 1.5em;
-}
-*/
-
-/* ===================
-        Footer
-====================== */  
 
 }
 /* --- Desktop view --- */  
@@ -163,23 +110,8 @@ form {
 @media(min-width: 1024px) {
 
 .container {
-  width:90%;
+  max-width:1200px;
 }
   
 
-/* ===================
-     Top Navigation
-====================== */
 
-
-/* ===================
-     General info
-====================== */
-
-
-/* ===================
-        Footer
-====================== */
-
-  
-}
